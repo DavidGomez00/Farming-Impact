@@ -44,7 +44,7 @@ public class Inventory : MonoBehaviour
         wheatTxt.text = ":" + nWheat;
 
         // initial money
-        money = 1200;
+        money = 1000;
         moneyTxt.text = ":" + money;
     }
 

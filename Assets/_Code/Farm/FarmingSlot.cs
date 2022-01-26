@@ -82,7 +82,11 @@ public class FarmingSlot : MonoBehaviour
                 }
                 break;
             case PlayerController.Estados.regar:
-                if (plantedCrop != null) plantedCrop.water();
+                if (plantedCrop != null)
+                {
+                    plantedCrop.water();
+                    spriteRenderer.color = new Color(0.6037736f, 0.5300194f, 0.4015664f, 1);              
+                }
                 break;
             case PlayerController.Estados.none:
                 if (plantedCrop == null)
@@ -96,6 +100,7 @@ public class FarmingSlot : MonoBehaviour
                 {
                     Harvest?.Invoke(plantedCrop);
                     Destroy(plantedCrop.gameObject);
+                    spriteRenderer.color = new Color(1, 1, 1, 1);
                 }
                 break;
 

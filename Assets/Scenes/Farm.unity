@@ -13089,6 +13089,7 @@ MonoBehaviour:
   estados: 
   animationTriggers:
   - Click
+  ClickEnabled: 0
 --- !u!60 &802042859
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13990,6 +13991,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: af2e29bd3685817438f09e88fdbcedec, type: 3}
+    - target: {fileID: 5475676956027013238, guid: 38bcd6275c8f56f419f8e2442e313fba, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475676956027013238, guid: 38bcd6275c8f56f419f8e2442e313fba, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475676956027013238, guid: 38bcd6275c8f56f419f8e2442e313fba, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5475676956027013238, guid: 38bcd6275c8f56f419f8e2442e313fba, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5475676956027013239, guid: 38bcd6275c8f56f419f8e2442e313fba, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -19586,6 +19603,7 @@ MonoBehaviour:
   estados: 
   animationTriggers:
   - Click
+  ClickEnabled: 0
 --- !u!60 &1188086331
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22022,6 +22040,7 @@ MonoBehaviour:
   estados: 
   animationTriggers:
   - Click
+  ClickEnabled: 0
 --- !u!60 &1260672205
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22671,6 +22690,7 @@ MonoBehaviour:
   estados: 
   animationTriggers:
   - Click
+  ClickEnabled: 0
 --- !u!60 &1261171388
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28938,6 +28958,7 @@ MonoBehaviour:
   estados: 
   animationTriggers:
   - Click
+  ClickEnabled: 0
 --- !u!60 &1707663909
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -30033,6 +30054,7 @@ MonoBehaviour:
   estados: 
   animationTriggers:
   - Click
+  ClickEnabled: 0
 --- !u!1001 &1926347756
 PrefabInstance:
   m_ObjectHideFlags: 0

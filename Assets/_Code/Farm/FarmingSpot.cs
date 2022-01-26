@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System;
+
 public class FarmingSpot : MonoBehaviour
 {
     public List<FarmingSlot> slots;
@@ -31,11 +34,17 @@ public class FarmingSpot : MonoBehaviour
             Destroy(lockedSpotSprite);
         }
     }
-    public void Update()
+
+    public void updatePrice()
     {
-        if (!precioDeDesbloqueo.ToString().Equals(price.text.ToString()))
+        var farmingSpots = FindObjectsOfType<FarmingSpot>();
+
+        foreach (var farmingSpot in farmingSpots)
         {
-            price.text = precioDeDesbloqueo.ToString();
+            if (farmingSpot.price != null)
+            {
+                farmingSpot.price.text = precioDeDesbloqueo.ToString();
+            }
         }
     }
 
@@ -48,6 +57,7 @@ public class FarmingSpot : MonoBehaviour
         
         Inventory.Instance.addMoney(-precioDeDesbloqueo);
         precioDeDesbloqueo = 2 * precioDeDesbloqueo;
+        updatePrice();
         
         foreach (var slot in slots)
         {
