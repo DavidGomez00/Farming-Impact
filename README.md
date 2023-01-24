@@ -5,6 +5,6 @@ El juego ha sido desarrollado enteramente en Unity2D. El objetivo de este proyec
 
 ## Créditos:
 David Andrés Sánchez https://github.com/Mrbid67
-Juan Becerro Campos 
-David Gómez Ortiz 
+Juan Becerro Campos https://github.com/JuanBC9
+David Gómez Ortiz https://github.com/DavidGomez00
 Esmeralda Madrazo Quintana https://github.com/Elionnee
